@@ -1,0 +1,18 @@
+{
+  "format": 1,
+  "name": "Corsair K95 RGB Platinum XT",
+  "vid": "0x1B1C",
+  "pid": "0x1B89",
+  "usage_page": "0xFF42",
+  "usage": "0x0002",
+  "interface": 2,
+  "match": {"1": "0x02"},
+  "keys": [
+    {"name": "G1", "byte": 18, "mask": "0x08"},
+    {"name": "G2", "byte": 18, "mask": "0x10"},
+    {"name": "G3", "byte": 18, "mask": "0x20"},
+    {"name": "G4", "byte": 18, "mask": "0x40"},
+    {"name": "G5", "byte": 18, "mask": "0x80"},
+    {"name": "G6", "byte": 19, "mask": "0x01"}
+  ]
+}

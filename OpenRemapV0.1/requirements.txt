@@ -1,0 +1,4 @@
+hidapi
+pyautogui
+pystray
+pillow

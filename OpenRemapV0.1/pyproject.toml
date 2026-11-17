@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openremap"
+version = "0.1.0"
+description = "Give extra keyboard keys (G-keys, macro keys) actions without vendor software"
+readme = "README.md"
+license = {text = "GPL-3.0-or-later"}
+requires-python = ">=3.9"
+dependencies = ["hidapi", "pyautogui", "pystray", "pillow"]
+classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)", "Operating System :: Microsoft :: Windows", "Programming Language :: Python :: 3"]
+
+[project.gui-scripts]
+openremap = "openremap.tray:main"
+openremap-settings = "openremap.ui.tk.app:main"
+
+[tool.setuptools.packages.find]
+include = ["openremap*"]
+
+[tool.setuptools.package-data]
+openremap = ["devices/*.json"]
